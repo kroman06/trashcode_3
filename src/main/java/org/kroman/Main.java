@@ -54,7 +54,7 @@ public class Main {
             System.err.println("Unexpected error: " + e.getMessage());
             e.printStackTrace();
         } finally {
-            System.out.println("\n--- Обробка запиту завершена. ---");
+            System.out.println("\n=== Program finished ===");
         }
     }
 }
