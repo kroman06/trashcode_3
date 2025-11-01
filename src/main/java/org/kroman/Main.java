@@ -1,5 +1,6 @@
 package org.kroman;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -48,7 +49,7 @@ public class Main {
                     break;
             }
 
-        } catch (ArithmeticException | InvalidInputException e) {
+        } catch (ArithmeticException | InvalidInputException | InputMismatchException e) {
             System.err.println("Error:" + e.getMessage());
         } catch (Exception e) {
             System.err.println("Unexpected error: " + e.getMessage());
